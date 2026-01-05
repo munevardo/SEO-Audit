@@ -1,0 +1,8 @@
+services:
+  seo_audit_app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - ./outputs:/app/outputs
